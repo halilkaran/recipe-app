@@ -1,8 +1,7 @@
 # Getting Started with Create React App
 
 
-LIVE SITE recipe-app-halo.netlify.app
-
+LIVE SITE [NETLIFY RECIPE-APP](https://recipe-app-halo.netlify.app).
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
