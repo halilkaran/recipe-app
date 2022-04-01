@@ -1,36 +1,54 @@
 import styled from "styled-components";
-export const Div = styled.div`
-   display: flex;
+import { FlexContainer } from "../../components/globalStlyes/GlobalStyles";
+
+export const MainContainer = styled(FlexContainer)`
+  flex-direction: row;
+  background-color: #00adb5;
+`;
+
+export const RecipeCard = styled(FlexContainer)`
   flex-direction: column;
-  justify-content: start;
-  align-items: center;
-`;
-export const Search = styled.div`
-  display: flex;
-  
-  justify-content: start;
-  
-`;
-
-export const Text = styled.p`
-  margin-top: 3rem;
-  align-items: center;
-  font-size: 3rem;
-  font-family: "Fredericka the Great", cursive;
-  font-weight: bold;
-`;
-
-export const Input = styled.input.attrs((props) => ({
- 
-  type: "text",
- 
-  size: props.size || "1em"
-}))`
-  color: palevioletred;
-  font-size: 1em;
-  border: 2px solid palevioletred;
+  height: 300px;
+  background: #e1f1dd;
+  padding: 5px;
   border-radius: 3px;
+  width: 300px;
+  margin: 10px;
+  box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.3);
+  &:hover {
+    box-shadow: none;
+    transition: all 0.3s ease-in;
+  }
+`;
 
+export const RecipeImage = styled.img`
+  height: 150px;
+  border-radius: 10px;
+`;
 
- 
+export const Button = styled.button`
+  background-color: #00adb5;
+  padding: 5px;
+  outline: none;
+  height: 2rem;
+  border: none;
+  margin: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+`;
+
+export const RecipeHeader = styled.h1`
+  font-size: 1.5rem;
+  text-align: center;
+`;
+
+export const ImgDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+`;
+
+export const HomeImg = styled.img`
+  width: 80%;
+  max-width: 750px;
 `;
